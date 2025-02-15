@@ -1,23 +1,24 @@
-const stats = [
+const record = [
   [
       {
-          Name: "Fujita",
-          PA: 4,
-          atBat: 4,
-          single: 1,
-          double: 0,
-          triple: 0,
-          HR: 0,
-          RBI: 1,
-          clutchHit: 1,
-          sucrificeBunt: 0,
-          sucrificefly: 0,
-          SB: 0,
-          BB: 0,
-          K: 1,
+        "Fujita" : {
+        PA: 4,
+        atBat: 4,
+        single: 1,
+        double: 0,
+        triple: 0,
+        HR: 0,
+        RBI: 1,
+        clutchHit: 1,
+        sucrificeBunt: 0,
+        sucrificefly: 0,
+        SB: 0,
+        BB: 0,
+        K: 1,
+        }
       },
       {
-          Name: "AAA",
+          "AAA" : {
           PA: 5,
           atBat: 4,
           single: 0,
@@ -31,10 +32,10 @@ const stats = [
           SB: 0,
           BB: 1,
           K: 2,
-  
+          }  
       },
       {
-          Name: "BBB",
+          "BBB" : {
           PA: 4,
           atBat: 4,
           single: 2,
@@ -48,11 +49,12 @@ const stats = [
           SB: 2,
           BB: 0,
           K: 0,
+          }
       },
   ],
   [
       {
-          Name: "Fujita",
+          "Fujita": {
           PA: 4,
           atBat: 3,
           single: 0,
@@ -66,6 +68,7 @@ const stats = [
           SB: 1,
           BB: 1,
           K: 1,
+          }
       },
       {
           Name: "AAA",
@@ -103,7 +106,7 @@ const stats = [
   ],
   [
       {
-          Name: "Fujita",
+          "Fujita": {
           PA: 4,
           atBat: 4,
           single: 1,
@@ -117,6 +120,7 @@ const stats = [
           SB: 0,
           BB: 0,
           K: 1,
+          }
       },
       {
           Name: "AAA",
@@ -153,7 +157,4 @@ const stats = [
       },
   ]
   ];
-  
-  // function avg
-  // function obp
-  // function slg
+
