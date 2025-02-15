@@ -1,5 +1,171 @@
-div {
-  width: 200px;
-  height: 300px;
-  background-color: lightgreen;
+div.mainContent{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+div.outline {
+  width: 470px;
+  margin: 5px;
+  padding: 5px;
+  background-color: green;
+  /* float: left; */
+}
+
+h2.title2 {
+  padding-left: 20px;
+}
+
+/* div.outline2 {
+  width: 500px;
+  margin-left: 30px;
+  padding: 5px;
+  background-color: rgb(0, 124, 128);
+} */
+
+div.order {
+  width: 450px;
+  height: 60px;
+  margin: 5px;
+  padding: 3px;
+  border: solid 1px black;
+  background-color: white;
+  /* display: flex; */
+  border-left: solid 5px yellow;
+}
+
+label{
+  margin-left: 15px;
+}
+
+div.statsDisplay {
+  display: flex;
+  /* height: 30px; */
+  /* margin: 3px; */
+  /* border: solid 1px black; */
+}
+
+p {
+  /* position: absolute;
+  left: 5px;
+  bottom: 5px; */
+  /* margin-top: 10px; */
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 90%;
+}
+
+input {
+  height: 20px;
+}
+
+div.positionButton {
+  display: flex;
+  position: relative;
+}
+
+#button11 {
+  margin-top: 100px;
+  /* position: absolute;
+  left: 50px;
+  top: 200px; */
+}
+
+#positionOne {
+  margin-top: 110px;
+  /* position: absolute;
+  top: 200px; */
+  border: solid 1px black;
+}
+
+div.diffence {
+  display: flex;
+  position: relative;
+}
+
+.diffence img {
+  width: 500px;
+  height: 500px;
+  margin-left: 20px;
+}
+
+#pitcher {
+  position: absolute;
+  top: 315px;
+  left: 263px;
+  background-color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#catcher {
+  position: absolute;
+  top: 430px;
+  left: 263px;
+  background-color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#firstBaseMan {
+  position: absolute;
+  top: 290px;
+  left: 330px;
+  background-color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#secondBaseMan {
+  position: absolute;
+  top: 240px;
+  left: 300px;
+  background-color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#thirdBaseMan {
+  position: absolute;
+  top: 290px;
+  left: 200px;
+  background-color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#shortStop {
+  position: absolute;
+  top: 240px;
+  left: 230px;
+  background-color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#left {
+  position: absolute;
+  top: 150px;
+  left: 140px;
+  background-color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#center {
+  position: absolute;
+  top: 120px;
+  left: 263px;
+  background-color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#right {
+  position: absolute;
+  top: 150px;
+  left: 390px;
+  background-color: white;
+  font-size: 18px;
+  font-weight: bold;
 }
