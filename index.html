@@ -7,13 +7,85 @@
   <meta name="theme-color" content="#000000">
   <script type="text/javascript" src="modules/lodash.js"></script>
   <script type="text/javascript" src="modules/test-boilerplate.js"></script>
-  <script type="text/javascript" src="script.js"></script>
+  <script type="text/javascript" src="record.js"></script>
+
 </head>
 
 <body>
   <link rel="stylesheet" href="presen.css">
-  <h1>Batting Order Simulator</h1>
-  <div>aaa</div>
+  <h1>⚾️Next Game Plan⚾️</h1>
+  <div class="mainContent">
+    <section class="left">
+    <h2>Batting Order</h2>
+      <div class="outline">
+        <div class="order" name="1">1
+          <input type="text" id="nameOfNumberOne" size="30" placeholder="Name?"/> 
+          <label>stats: <input type="text" id="numberOfGameOne" class="numberOfGame" size="10" placeholder="Last ? games"/></label>
+          <button id="button1">↓ check</button>     
+          <div class="statsDisplay">
+            <p>AVG:</p><p id="avg1"></p>
+            <p>OBP:</p><p id="obp1"></p>
+            <p>SLG:</p><p id="slg1"></p>
+            <p>HR:</p><p id="hr1"></p>
+            <p>SB:</p><p id="sb1"></p>
+          </div>
+        </div>
+        <div class="order" name="2">2
+          <input type="text" id="2" size="30" placeholder="Name?"/> 
+          <label>stats: <input type="text" class="numberOfGame" size="10" placeholder="Last ? games"/></label>
+          <button id="button2">↓ check</button>     
+          <div class="statsDisplay">
+            <p>AVG:</p><p>1111</p>
+            <p>OBP:</p><p>1111</p>
+            <p>SLG:</p><p>1111</p>
+            <p>HR:</p><p>111</p>
+            <p>SB:</p><p>111</p>
+          </div>
+        </div>
+        <div class="order" name="3">3
+          <input type="text" id="3" size="30" placeholder="Name?"/> 
+          <label>stats: <input type="text" class="numberOfGame" size="10" placeholder="Last ? games"/></label>
+          <button id="button3">↓ check</button>     
+          <div class="statsDisplay">
+            <p>AVG:</p><p>1111</p>
+            <p>OBP:</p><p>1111</p>
+            <p>SLG:</p><p>1111</p>
+            <p>HR:</p><p>111</p>
+            <p>SB:</p><p>111</p>
+          </div>
+        </div>         
+        <div class="order" name="4">4</div>
+        <div class="order" name="5">5</div>
+        <div class="order" name="6">6</div>
+        <div class="order" name="7">7</div>
+        <div class="order" name="8">8</div>
+        <div class="order" name="9">9</div>
+      </div>
+    </section>
+    <section class="middle">
+      <div>
+        <div class="positionButton"></div>
+          <input type="text" id="positionOne" size="5"/>
+          <button id="button11">=></button>
+      </div>
+    </section>
+    <section class="right">
+    <h2 class="title2">Diffence Position</h2>
+      <div class="diffence">
+        <img src="/Users/fujitasho/DIG/foundations/presentation/field.png">
+        <p id="pitcher">1</p>
+        <p id="catcher">1</p>
+        <p id="firstBaseMan">1</p>
+        <p id="secondBaseMan">1</p>
+        <p id="thirdBaseMan">1</p>
+        <p id="shortStop">1</p>
+        <p id="left">1</p>
+        <p id="center">1</p>
+        <p id="right">1</p>
+      </div>
+    </section>
+  </div>
+  <script type="text/javascript" src="script.js"></script>
 </body>
 
 </html>
