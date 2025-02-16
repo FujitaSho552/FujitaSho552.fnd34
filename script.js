@@ -149,6 +149,97 @@ function moveField(name, position) {
   }
 }
 
+/////Member リスト表示
+/**
+ * @param {string} name - メンバーに追加したい人の名前
+ * @returns ドロップダウンのoption要素を作成する
+ */
+function member() {
+  let elements = document.getElementsByName("member");
+  let length = elements.length;
+  let checkValue = "";
+  
+  for (let i = 0; i < length; i++) {
+    if (elements[i].checked) {
+      let option = document.createElement("option");
+      checkValue = elements[i].value;
+      option.value = checkValue;
+      option.textContent = checkValue;
+      nameOne.appendChild(option);
+    }
+  }
+  for (let i = 0; i < length; i++) {
+    if (elements[i].checked) {
+      let option = document.createElement("option");
+      checkValue = elements[i].value;
+      option.value = checkValue;
+      option.textContent = checkValue;
+      nameTwo.appendChild(option);
+    }
+  }for (let i = 0; i < length; i++) {
+    if (elements[i].checked) {
+      let option = document.createElement("option");
+      checkValue = elements[i].value;
+      option.value = checkValue;
+      option.textContent = checkValue;
+      nameThree.appendChild(option);
+    }
+  }for (let i = 0; i < length; i++) {
+    if (elements[i].checked) {
+      let option = document.createElement("option");
+      checkValue = elements[i].value;
+      option.value = checkValue;
+      option.textContent = checkValue;
+      nameFour.appendChild(option);
+    }
+  }
+  for (let i = 0; i < length; i++) {
+    if (elements[i].checked) {
+      let option = document.createElement("option");
+      checkValue = elements[i].value;
+      option.value = checkValue;
+      option.textContent = checkValue;
+      nameFive.appendChild(option);
+    }
+  }
+  for (let i = 0; i < length; i++) {
+    if (elements[i].checked) {
+      let option = document.createElement("option");
+      checkValue = elements[i].value;
+      option.value = checkValue;
+      option.textContent = checkValue;
+      nameSix.appendChild(option);
+    }
+  }
+  for (let i = 0; i < length; i++) {
+    if (elements[i].checked) {
+      let option = document.createElement("option");
+      checkValue = elements[i].value;
+      option.value = checkValue;
+      option.textContent = checkValue;
+      nameSeven.appendChild(option);
+    }
+  }
+  for (let i = 0; i < length; i++) {
+    if (elements[i].checked) {
+      let option = document.createElement("option");
+      checkValue = elements[i].value;
+      option.value = checkValue;
+      option.textContent = checkValue;
+      nameEight.appendChild(option);
+    }
+  }
+  for (let i = 0; i < length; i++) {
+    if (elements[i].checked) {
+      let option = document.createElement("option");
+      checkValue = elements[i].value;
+      option.value = checkValue;
+      option.textContent = checkValue;
+      nameNine.appendChild(option);
+    }
+  }
+}
+
 ///// 1 枠目のイベント
 function displayNumberOne() {
   const statsOneAvg = document.getElementById("avg1");
@@ -156,7 +247,7 @@ function displayNumberOne() {
   const statsOneSlg = document.getElementById("slg1");
   const statsOneHr = document.getElementById("hr1");
   const statsOneSb = document.getElementById("sb1");
-  let personalName = document.getElementById("nameOne");
+  let personalName = document.getElementById("memberList1");
   let lastGameOne = document.getElementById("gameOne");
   statsOneAvg.innerText = avg(personalName.value, lastGameOne.value);
   statsOneObp.innerText = obp(personalName.value, lastGameOne.value);
@@ -168,12 +259,16 @@ const checkOne = document.getElementById("button1");
 checkOne.addEventListener("click", displayNumberOne);
 
 function displayPositionOne() {
-  let personalName = document.getElementById("nameOne");
+  let personalName = document.getElementById("memberList1");
   const positionSelect = document.getElementById("positionOne");
   moveField(personalName.value, positionSelect.value);
 }
 const moveOne = document.getElementById("buttonP1");
 moveOne.addEventListener("click", displayPositionOne);
+
+const nameOne = document.getElementById("memberList1");
+const createListOne = document.getElementById("buttonM1");
+createListOne.addEventListener("click", member);
 
 ///// 2 枠目のイベント
 function displayNumberTwo() {
@@ -182,7 +277,7 @@ function displayNumberTwo() {
   const statsOneSlg = document.getElementById("slg2");
   const statsOneHr = document.getElementById("hr2");
   const statsOneSb = document.getElementById("sb2");
-  let personalName = document.getElementById("nameTwo");
+  let personalName = document.getElementById("memberList2");
   let lastGameOne = document.getElementById("gameTwo");
   statsOneAvg.innerText = avg(personalName.value, lastGameOne.value);
   statsOneObp.innerText = obp(personalName.value, lastGameOne.value);
@@ -194,12 +289,16 @@ const checkTwo = document.getElementById("button2");
 checkTwo.addEventListener("click", displayNumberTwo);
 
 function displayPositionTwo() {
-  let personalName = document.getElementById("nameTwo");
+  let personalName = document.getElementById("memberList2");
   const positionSelect = document.getElementById("positionTwo");
   moveField(personalName.value, positionSelect.value);
 }
 const moveTwo = document.getElementById("buttonP2");
 moveTwo.addEventListener("click", displayPositionTwo);
+
+const nameTwo = document.getElementById("memberList2");
+const createListTwo = document.getElementById("buttonM1");
+createListTwo.addEventListener("click", member);
 
 ///// 3 枠目のイベント
 function displayNumberThree() {
@@ -208,7 +307,7 @@ function displayNumberThree() {
   const statsOneSlg = document.getElementById("slg3");
   const statsOneHr = document.getElementById("hr3");
   const statsOneSb = document.getElementById("sb3");
-  let personalName = document.getElementById("nameThree");
+  let personalName = document.getElementById("memberList3");
   let lastGameOne = document.getElementById("gameThree");
   statsOneAvg.innerText = avg(personalName.value, lastGameOne.value);
   statsOneObp.innerText = obp(personalName.value, lastGameOne.value);
@@ -220,12 +319,16 @@ const checkThree = document.getElementById("button3");
 checkThree.addEventListener("click", displayNumberThree);
 
 function displayPositionThree() {
-  let personalName = document.getElementById("nameThree");
+  let personalName = document.getElementById("memberList3");
   const positionSelect = document.getElementById("positionThree");
   moveField(personalName.value, positionSelect.value);
 }
 const moveThree = document.getElementById("buttonP3");
 moveThree.addEventListener("click", displayPositionThree);
+
+const nameThree = document.getElementById("memberList3");
+const createListThree = document.getElementById("buttonM1");
+createListThree.addEventListener("click", member);
 
 ///// 4 枠目のイベント
 function displayNumberFour() {
@@ -234,7 +337,7 @@ function displayNumberFour() {
   const statsOneSlg = document.getElementById("slg4");
   const statsOneHr = document.getElementById("hr4");
   const statsOneSb = document.getElementById("sb4");
-  let personalName = document.getElementById("nameFour");
+  let personalName = document.getElementById("memberList4");
   let lastGameOne = document.getElementById("gameFour");
   statsOneAvg.innerText = avg(personalName.value, lastGameOne.value);
   statsOneObp.innerText = obp(personalName.value, lastGameOne.value);
@@ -246,12 +349,16 @@ const checkFour = document.getElementById("button4");
 checkFour.addEventListener("click", displayNumberFour);
 
 function displayPositionFour() {
-  let personalName = document.getElementById("nameFour");
+  let personalName = document.getElementById("memberList4");
   const positionSelect = document.getElementById("positionFour");
   moveField(personalName.value, positionSelect.value);
 }
 const moveFour = document.getElementById("buttonP4");
 moveFour.addEventListener("click", displayPositionFour);
+
+const nameFour = document.getElementById("memberList4");
+const createListFour = document.getElementById("buttonM1");
+createListFour.addEventListener("click", member);
 
 ///// 5 枠目のイベント
 function displayNumberFive() {
@@ -260,7 +367,7 @@ function displayNumberFive() {
   const statsOneSlg = document.getElementById("slg5");
   const statsOneHr = document.getElementById("hr5");
   const statsOneSb = document.getElementById("sb5");
-  let personalName = document.getElementById("nameFive");
+  let personalName = document.getElementById("memberList5");
   let lastGameOne = document.getElementById("gameFive");
   statsOneAvg.innerText = avg(personalName.value, lastGameOne.value);
   statsOneObp.innerText = obp(personalName.value, lastGameOne.value);
@@ -272,12 +379,16 @@ const checkFive = document.getElementById("button5");
 checkFive.addEventListener("click", displayNumberFive);
 
 function displayPositionFive() {
-  let personalName = document.getElementById("nameFive");
+  let personalName = document.getElementById("memberList5");
   const positionSelect = document.getElementById("positionFive");
   moveField(personalName.value, positionSelect.value);
 }
 const moveFive = document.getElementById("buttonP5");
 moveFive.addEventListener("click", displayPositionFive);
+
+const nameFive = document.getElementById("memberList5");
+const createListFive = document.getElementById("buttonM1");
+createListFive.addEventListener("click", member);
 
 ///// 6 枠目のイベント
 function displayNumberSix() {
@@ -286,7 +397,7 @@ function displayNumberSix() {
   const statsOneSlg = document.getElementById("slg6");
   const statsOneHr = document.getElementById("hr6");
   const statsOneSb = document.getElementById("sb6");
-  let personalName = document.getElementById("nameSix");
+  let personalName = document.getElementById("memberList6");
   let lastGameOne = document.getElementById("gameSix");
   statsOneAvg.innerText = avg(personalName.value, lastGameOne.value);
   statsOneObp.innerText = obp(personalName.value, lastGameOne.value);
@@ -298,12 +409,16 @@ const checkSix = document.getElementById("button6");
 checkSix.addEventListener("click", displayNumberSix);
 
 function displayPositionSix() {
-  let personalName = document.getElementById("nameSix");
+  let personalName = document.getElementById("memberList6");
   const positionSelect = document.getElementById("positionSix");
   moveField(personalName.value, positionSelect.value);
 }
 const moveSix = document.getElementById("buttonP6");
 moveSix.addEventListener("click", displayPositionSix);
+
+const nameSix = document.getElementById("memberList6");
+const createListSix = document.getElementById("buttonM1");
+createListSix.addEventListener("click", member);
 
 ///// 7 枠目のイベント
 function displayNumberSeven() {
@@ -312,7 +427,7 @@ function displayNumberSeven() {
   const statsOneSlg = document.getElementById("slg7");
   const statsOneHr = document.getElementById("hr7");
   const statsOneSb = document.getElementById("sb7");
-  let personalName = document.getElementById("nameSeven");
+  let personalName = document.getElementById("memberList7");
   let lastGameOne = document.getElementById("gameSeven");
   statsOneAvg.innerText = avg(personalName.value, lastGameOne.value);
   statsOneObp.innerText = obp(personalName.value, lastGameOne.value);
@@ -324,12 +439,16 @@ const checkSeven = document.getElementById("button7");
 checkSeven.addEventListener("click", displayNumberSeven);
 
 function displayPositionSeven() {
-  let personalName = document.getElementById("nameSeven");
+  let personalName = document.getElementById("memberList7");
   const positionSelect = document.getElementById("positionSeven");
   moveField(personalName.value, positionSelect.value);
 }
 const moveSeven = document.getElementById("buttonP7");
 moveSeven.addEventListener("click", displayPositionSeven);
+
+const nameSeven = document.getElementById("memberList7");
+const createListSeven = document.getElementById("buttonM1");
+createListSeven.addEventListener("click", member);
 
 ///// 8 枠目のイベント
 function displayNumberEight() {
@@ -338,7 +457,7 @@ function displayNumberEight() {
   const statsOneSlg = document.getElementById("slg8");
   const statsOneHr = document.getElementById("hr8");
   const statsOneSb = document.getElementById("sb8");
-  let personalName = document.getElementById("nameEight");
+  let personalName = document.getElementById("memberList8");
   let lastGameOne = document.getElementById("gameEight");
   statsOneAvg.innerText = avg(personalName.value, lastGameOne.value);
   statsOneObp.innerText = obp(personalName.value, lastGameOne.value);
@@ -350,12 +469,16 @@ const checkEight = document.getElementById("button8");
 checkEight.addEventListener("click", displayNumberEight);
 
 function displayPositionEight() {
-  let personalName = document.getElementById("nameEight");
+  let personalName = document.getElementById("memberList8");
   const positionSelect = document.getElementById("positionEight");
   moveField(personalName.value, positionSelect.value);
 }
 const moveEight = document.getElementById("buttonP8");
 moveEight.addEventListener("click", displayPositionEight);
+
+const nameEight = document.getElementById("memberList8");
+const createListEight = document.getElementById("buttonM1");
+createListEight.addEventListener("click", member);
 
 ///// 9 枠目のイベント
 function displayNumberNine() {
@@ -364,7 +487,7 @@ function displayNumberNine() {
   const statsOneSlg = document.getElementById("slg9");
   const statsOneHr = document.getElementById("hr9");
   const statsOneSb = document.getElementById("sb9");
-  let personalName = document.getElementById("nameNine");
+  let personalName = document.getElementById("memberList9");
   let lastGameOne = document.getElementById("gameNine");
   statsOneAvg.innerText = avg(personalName.value, lastGameOne.value);
   statsOneObp.innerText = obp(personalName.value, lastGameOne.value);
@@ -376,9 +499,13 @@ const checkNine = document.getElementById("button9");
 checkNine.addEventListener("click", displayNumberNine);
 
 function displayPositionNine() {
-  let personalName = document.getElementById("nameNine");
+  let personalName = document.getElementById("memberList9");
   const positionSelect = document.getElementById("positionNine");
   moveField(personalName.value, positionSelect.value);
 }
 const moveNine = document.getElementById("buttonP9");
 moveNine.addEventListener("click", displayPositionNine);
+
+const nameNine = document.getElementById("memberList9");
+const createListNine = document.getElementById("buttonM1");
+createListNine.addEventListener("click", member);
